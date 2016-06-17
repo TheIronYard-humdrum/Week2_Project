@@ -4,3 +4,5 @@
 * Use JavaScript to generate HTML content
 * `.appendChild()`
 * `document.createElement("UL")`
+
+:tired_face: My brain hurts too much to add an image today. :tired_face:
