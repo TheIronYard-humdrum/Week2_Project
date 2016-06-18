@@ -1,6 +1,6 @@
 ---
 | Answer 1 |
-============
+____________
 | **Task** |
 | ------------ |
 | Return Average Price of Items |
