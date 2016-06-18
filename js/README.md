@@ -40,10 +40,10 @@ ____________
 
 | **Function** |  *Arguments* | *Return Value* |
 | ------------ | --------------- | -------------- |
-| `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type |
+| `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type | :neckbeard:
 ---
 
-| Answer 4 | :neckbeard:
+| Answer 4 | :smile"
 ____________
 | **Task** |
 | ------------ |
@@ -54,7 +54,7 @@ ____________
 | `materialType(items, material)` | **array** of items | **array** of items made of specified material. |
 ---
 
-| Answer 5 | :bowtie:
+| Answer 5 | :smiley:
 ____________
 | **Task** |
 | ------------ |
@@ -62,10 +62,10 @@ ____________
 
 | **Function** |  *Arguments* | *Return Value* |
 | ------------ | --------------- | -------------- |
-| `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. |
+| `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. | :japanese_goblin:
 ---
 
-| Answer 6 | :japanese_goblin:
+| Answer 6 | :sunglasses:
 ____________
 | **Task** |
 | ------------ |
