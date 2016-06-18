@@ -1,3 +1,13 @@
+#### Week 2 Project - JavaScript Functions - Putting Elements on Page
+##### JavaScript
+
+###### JavaScript Functions for Week 2 Project
+* Practice using Higher Order Functions.
+* Practice populating HTML with JavaScript.
+* `.appendChild()`
+* `document.createElement("UL")`
+* `.filter()`
+
 | Answer 1 |
 ____________
 | **Task** |
