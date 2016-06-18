@@ -8,7 +8,7 @@
 * `document.createElement("UL")`
 * `.filter()`
 
-| Answer 1 |
+| Answer 1 | :smile:
 ____________
 | **Task** |
 | ------------ |
@@ -21,7 +21,7 @@ ____________
 
 ---
 
-| Answer 2 |
+| Answer 2 | :smiley:
 ____________
 | **Task** |
 | ------------ |
@@ -32,7 +32,7 @@ ____________
 | `priceRange(items, min, max)` | **array** of items, a **min** and **max** price | **array** of items within the price range. |
 ---
 
-| Answer 3 |
+| Answer 3 | :sunglasses:
 ____________
 | **Task** |
 | ------------ |
@@ -43,7 +43,7 @@ ____________
 | `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type |
 ---
 
-| Answer 4 |
+| Answer 4 | :neckbeard:
 ____________
 | **Task** |
 | ------------ |
@@ -54,7 +54,7 @@ ____________
 | `materialType(items, material)` | **array** of items | **array** of items made of specified material. |
 ---
 
-| Answer 5 |
+| Answer 5 | :bowtie:
 ____________
 | **Task** |
 | ------------ |
@@ -65,7 +65,7 @@ ____________
 | `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. |
 ---
 
-| Answer 6 |
+| Answer 6 | :japanese_goblin:
 ____________
 | **Task** |
 | ------------ |
