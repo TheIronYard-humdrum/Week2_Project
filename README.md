@@ -5,4 +5,4 @@
 * `.appendChild()`
 * `document.createElement("UL")`
 
-:tired_face: My brain hurts too much to add an image today. :tired_face:
+:tired_face: Merrr :tired_face:
