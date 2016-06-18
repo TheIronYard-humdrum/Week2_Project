@@ -40,7 +40,7 @@ ____________
 
 | **Function** |  *Arguments* | *Return Value* |
 | ------------ | --------------- | -------------- |
-| `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type | :neckbeard:
+| `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type |
 ---
 
 | Answer 4 | :smile:
@@ -62,7 +62,7 @@ ____________
 
 | **Function** |  *Arguments* | *Return Value* |
 | ------------ | --------------- | -------------- |
-| `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. | :japanese_goblin:
+| `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. |
 ---
 
 | Answer 6 | :sunglasses:
