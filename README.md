@@ -4,5 +4,3 @@
 * Use JavaScript to generate HTML content
 * `.appendChild()`
 * `document.createElement("UL")`
-
-:tired_face: Merrr :tired_face:
