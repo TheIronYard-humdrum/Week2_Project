@@ -11,7 +11,7 @@ ____________
 | `avg(prices)`      | **array** of prices | average price as **number** |
 ---
 | Answer 2 |
-============
+____________
 | **Task** |
 | ------------ |
 | Items within Price Range |
