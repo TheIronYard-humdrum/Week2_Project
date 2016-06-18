@@ -1,102 +1,61 @@
-// //////////////////////////////////////////
-// ---      Answer 1 ------------------------
-// ---       Return Average Price of Items --
-// ---       --------------------------------
-// ---       - itemPrice takes an array of 
-// ---          items and returns and array of
-// ---          prices
-// ---       - avg takes an array of prices
-// ---          and returns the average price.
-// ---
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       itemPrice(items)
-// ---       avg(prices)
-// ---       ________________
-// ---
-// //////////////////////////////////////////
-// //////////////////////////////////////////
-// //////////////////////////////////////////
-// ---
-// ---      Answer 2 -------------------
-// ---       Items within Price Range --
-// ---       ------------------------------
-// ---       Takes an array of items, a min 
-// ---         price, and a max price as
-// ---         arguments.
-// --- 
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       priceRange(items, min, max)
-// ---       ________________   
-// ---        
-// //////////////////////////////////////////
+---
+| Answer 1 |
+============
+| **Task** |
+| ------------ |
+| Return Average Price of Items |
 
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `itemPrice(items)` | **array** of items | **array** of prices |
+| `avg(prices)`      | **array** of prices | average price as **number** |
+---
+| Answer 2 |
+============
+| **Task** |
+| ------------ |
+| Items within Price Range |
 
-// //////////////////////////////////////////
-// ---      Answer 3 ----------------------
-// ---       Items Sold in GBP ------------
-// ---       ------------------------------
-// ---       Takes an array of items and a 
-// ---         currency type as arguments.
-// ---
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       currencyType(items, type)
-// ---       ________________  
-// ---
-// //////////////////////////////////////////
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `priceRange(items, min, max)` | **array** of items, a **min** and **max** price | **array** of items within the price range. |
+---
+| Answer 3 |
+============
+| **Task** |
+| ------------ |
+| Items Sold in GBP |
 
-// //////////////////////////////////////////
-// ---      Answer 4 ----------------------
-// ---       Display all tiems made of wood.
-// ---       ------------------------------
-// ---       Takes an array of items and 
-// ---         returns the items made of 
-// ---         the specified material.
-// ---
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       materialType(items, material)
-// ---       ________________  
-// ---
-// //////////////////////////////////////////
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type |
+---
+| Answer 4 |
+============
+| **Task** |
+| ------------ |
+| Dispaly All Items Made of Wood |
 
-// //////////////////////////////////////////
-// ---      Answer 5 ----------------------
-// ---       Display all tiems made of n+ 
-// ---        materials
-// ---       ------------------------------
-// ---       Takes an array of items and 
-// ---         returns the items made with
-// ---         n+ materials.
-// ---
-// ---
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       materialCount(items, n)
-// ---       ________________ 
-// --- 
-// //////////////////////////////////////////
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `materialType(items, material)` | **array** of items | **array** of items made of specified material. |
+---
+| Answer 5 |
+============
+| **Task** |
+| ------------ |
+| Display All Items Made of n+ Materials |
 
-// //////////////////////////////////////////
-// ---      Answer 6 ----------------------
-// ---       Display all tiems made specified
-// ---        manufacturer.
-// ---       ------------------------------
-// ---       Takes an array of items and 
-// ---         returns the items made by
-// ---         specified manufacturer.
-// ---
-// ---       Functions:
-// ---       ________________
-// ---    
-// ---       madeBy(items, manufacturer)
-// ---       ________________ 
-// --- 
-// //////////////////////////////////////////
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. |
+---
+| Answer 6 |
+============
+| **Task** |
+| ------------ |
+| Items Made By Seller |
+
+| **Function** |  *Arguments* | *Return Value* |
+| ------------ | --------------- | -------------- |
+| `madeBy(items, manufacturer)` | **array** of items, **manufacturer** | **array** of items made by specified manufacturer. |
