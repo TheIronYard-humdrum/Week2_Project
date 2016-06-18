@@ -43,7 +43,7 @@ ____________
 | `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type | :neckbeard:
 ---
 
-| Answer 4 | :smile"
+| Answer 4 | :smile:
 ____________
 | **Task** |
 | ------------ |
