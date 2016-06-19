@@ -42,7 +42,7 @@ var averagePrice = avg(prices).toFixed(2);
 // -- Answer 1 Page Population
 // -------------------------
 
-var answerOne = documnet.createElement("P");
+var answerOne = document.createElement("P");
 var answerOneText = document.createTextNode(averagePrice);
 answerOne.appendChild(answerOneText);
 document.getElementById("answer1").appendChild(answerOne);
@@ -68,6 +68,23 @@ var priceRange = function(items, min, max) {
 
 var inPriceRange = priceRange(items, 14, 18);
 
+// -------------------------
+// -- Answer 2 Page Population
+// -------------------------
+
+  var answerTwoList = document.createElement("UL");
+  answerTwoList.setAttribute("id", "answerTwoList");
+  document.getElementById("answer2").appendChild(answerTwoList);
+
+  var answerTwoGenerator = function(items) {
+    for (i in items) {
+      var answerTwo = document.createElement("LI");
+      var answerTwoText = document.createTextNode(items[i].title);
+      answerTwo.appendChild(answerTwoText);
+      document.getElementById("answerTwoList").appendChild(answerTwo);
+    }
+  };
+  answerTwoGenerator(inPriceRange);
 
 // //////////////////////////////////////////
 // ------   Answer 3 ----------------------
@@ -80,7 +97,7 @@ var inPriceRange = priceRange(items, 14, 18);
 
 var currencyType = function(items, type) {
   var ofType = items.filter(function(item) {
-    if (item.currency_type == type) {
+    if (item.currency_code == type) {
       return item;
     }
   });
@@ -88,6 +105,21 @@ var currencyType = function(items, type) {
 };
 
 var ofCurrencyType = currencyType(items, "GBP")
+
+// -------------------------
+// -- Answer 3 Page Population
+// -------------------------
+ 
+ function answerThreeGenerator(items) {
+  for (i in items) {
+    var answerThree = document.createElement("P");
+    var answerThreeText = document.createTextNode(ofCurrencyType[i].title + " \xA3 " + ofCurrencyType[i].price);
+    answerThree.appendChild(answerThreeText);
+    document.getElementById("answer3").appendChild(answerThree);
+  }
+ }
+
+ answerThreeGenerator(ofCurrencyType);
 
 // //////////////////////////////////////////
 // ------   Answer 4 ----------------------
@@ -108,6 +140,24 @@ var materialType = function(items, material) {
 }
 
 var madeOfWood = materialType(items, "wood");
+
+// -------------------------
+// -- Answer 4 Page Population
+// -------------------------
+
+ var answerFourList = document.createElement("UL");
+ answerFourList.setAttribute("id", "answerFourList");
+ document.getElementById("answer4").appendChild(answerFourList);
+ 
+ var answerFourGenerator = function(items) {
+   for (i in items) {
+   var answerFour = document.createElement("LI")
+   var answerFourText = document.createTextNode(items[i].title);
+   answerFour.appendChild(answerFourText);
+   document.getElementById("answerFourList").appendChild(answerFour);
+   }
+ }
+ answerFourGenerator(madeOfWood)
 
 // //////////////////////////////////////////
 // ------   Answer 5 ----------------------
@@ -130,7 +180,32 @@ var materialCount = function(items, n) {
 
 var eightPlusMatierals = materialCount(items, 8);
 
+// -------------------------
+// -- Answer 5 Page Population
+// -------------------------
 
+ var answerFiveGen = function(items) {
+   var masterUl = document.createElement("UL");
+   for (i in items) {
+     var masterLi = document.createElement("LI");
+     var masterLiText = document.createTextNode(items[i].title)
+     masterLi.appendChild(masterLiText);
+     var subUl = document.createElement("UL");
+     for (a in items[i].materials) {
+       var subLi = document.createElement("LI");
+       var subLiText = document.createTextNode(items[i].materials[a])
+       subLi.appendChild(subLiText);
+       subUl.appendChild(subLi);
+     }
+     masterLi.appendChild(subUl);
+     masterUl.appendChild(masterLi);
+   }
+   answerFive = document.getElementById("answer5");
+   answerFive.appendChild(masterUl);
+ }
+ 
+ 
+ answerFiveGen(eightPlusMatierals);
 
 // //////////////////////////////////////////
 // ------   Answer 6 ----------------------
@@ -153,25 +228,14 @@ var madeBy = function(items, manufacturer) {
 
 var sellerMade = madeBy(items, "i_did");
 
+// -------------------------
+// -- Answer 6 Page Population
+// -------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var answerSix = document.createElement("P");
+var asnwerSixText = document.createTextNode(String(sellerMade.length  + " were made by their sellers"));
+answerSix.appendChild(asnwerSixText);
+document.getElementById("answer6").appendChild(answerSix);
 
 
 
