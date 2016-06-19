@@ -41,12 +41,11 @@ var averagePrice = avg(prices).toFixed(2);
 // -------------------------
 // -- Answer 1 Page Population
 // -------------------------
-// var answerOneDiv = document.createElement("DIV")
-// answerOneDiv.setAttribute("id", "answer1")
-// var answerOneHOne = document.createElement("H1")
-// var answerOneText = document.createTextNode(averagePrice);
-// answerOneHOne.appendChild(answerOneText);
-// answerOneDiv.appendChild(answerOneHOne);
+
+var answerOne = documnet.createElement("P");
+var answerOneText = document.createTextNode(averagePrice);
+answerOne.appendChild(answerOneText);
+document.getElementById("answer1").appendChild(answerOne);
 
 // //////////////////////////////////////////
 // ------   Answer 2 -------------------
