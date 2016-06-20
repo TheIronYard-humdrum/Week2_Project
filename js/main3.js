@@ -181,9 +181,7 @@ var madeOfWood = materialType(items, "wood");
 
 var materialCount = function(items, n) {
   var inRange = items.filter(function(item) {
-    if ((item.materials).length >= n) {
-      return item;
-    }
+    return item.materials.length >= n
   });
   return inRange;
 };
