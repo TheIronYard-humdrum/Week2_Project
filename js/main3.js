@@ -30,22 +30,37 @@ var itemPrice = function(items) {
 var prices = itemPrice(items);
 
 var avg = function(prices) {
+  averagePrice = [];
   var total = prices.reduce(function(price, next) {
     return price + next
   });
-  return (total/prices.length);
+  averagePrice.push((total/prices.length).toFixed(2));
+  return averagePrice
 };
 
-var averagePrice = avg(prices).toFixed(2);
+var averagePrice = avg(prices);
 
 // -------------------------
 // -- Answer 1 Page Population
 // -------------------------
 
-var answerOne = document.createElement("P");
-var answerOneText = document.createTextNode(averagePrice);
-answerOne.appendChild(answerOneText);
-document.getElementById("answer1").appendChild(answerOne);
+// var answerOne = document.createElement("P");
+// var answerOneText = document.createTextNode(averagePrice);
+// answerOne.appendChild(answerOneText);
+// document.getElementById("answer1").appendChild(answerOne);
+
+
+var answerOneGen = function(items) {
+  var pNodes = items.forEach(function(item) {
+    var answerOne = document.createElement("P");
+    var answerOneText = document.createTextNode(item);
+    answerOne.appendChild(answerOneText);
+    document.getElementById("answer1").appendChild(answerOne);
+  });
+  return pNodes;
+}
+
+answerOneGen(averagePrice);
 
 // //////////////////////////////////////////
 // ------   Answer 2 -------------------
