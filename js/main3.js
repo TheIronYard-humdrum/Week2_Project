@@ -121,12 +121,12 @@ var ofCurrencyType = currencyType(items, "GBP")
 // -------------------------
  
 function answerThreeGenerator(items) {
-for (i in items) {
-  var answerThree = document.createElement("P");
-  var answerThreeText = document.createTextNode(ofCurrencyType[i].title + " \xA3 " + ofCurrencyType[i].price);
-  answerThree.appendChild(answerThreeText);
-  document.getElementById("answer3").appendChild(answerThree);
-}
+  for (i in items) {
+    var answerThree = document.createElement("P");
+    var answerThreeText = document.createTextNode(ofCurrencyType[i].title + " \xA3 " + ofCurrencyType[i].price);
+    answerThree.appendChild(answerThreeText);
+    document.getElementById("answer3").appendChild(answerThree);
+  }
 };
 
 answerThreeGenerator(ofCurrencyType);
@@ -147,7 +147,7 @@ var materialType = function(items, material) {
     }
   });
   return ofType;
-;}
+};
 
 var madeOfWood = materialType(items, "wood");
 
@@ -187,6 +187,11 @@ var materialCount = function(items, n) {
 };
 
 var eightPlusMatierals = materialCount(items, 8);
+
+//filter does not care what return value you give it.  
+//as long as its conditional returns true, the item 
+//it had evaluated will be returned to the return 
+//array that was created by the filter function.
 
 // -------------------------
 // -- Answer 5 Page Population
@@ -244,23 +249,6 @@ var answerSix = document.createElement("P");
 var asnwerSixText = document.createTextNode(String(sellerMade.length  + " were made by their sellers"));
 answerSix.appendChild(asnwerSixText);
 document.getElementById("answer6").appendChild(answerSix);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
