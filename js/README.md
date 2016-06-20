@@ -17,7 +17,7 @@ ____________
 | **Function** |  *Arguments* | *Return Value* |
 | ------------ | --------------- | -------------- |
 | `itemPrice(items)` | **array** of items | **array** of prices |
-| `avg(prices)`      | **array** of prices | average price as **number** |
+| `avg(prices)`      | **array** of prices | average price stored in an **array** |
 
 ---
 
