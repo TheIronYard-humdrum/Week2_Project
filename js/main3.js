@@ -5,10 +5,6 @@
 // -------------------
 // //////////////////////////////////////////
 
-document.write("<!DOCTYPE html><html><head><title>My First JS Generated Page</title></head><body></body></html>")
-
-var bodyNode = document.getElementsByTagName("body")
-
 // //////////////////////////////////////////
 // ------   Answer 1 ------------------------
 // ------    Return Average Price of Items --
@@ -32,10 +28,10 @@ var prices = itemPrice(items);
 var avg = function(prices) {
   averagePrice = [];
   var total = prices.reduce(function(price, next) {
-    return price + next
+    return price + next;
   });
   averagePrice.push((total/prices.length).toFixed(2));
-  return averagePrice
+  return averagePrice;
 };
 
 var averagePrice = avg(prices);
@@ -49,7 +45,6 @@ var averagePrice = avg(prices);
 // answerOne.appendChild(answerOneText);
 // document.getElementById("answer1").appendChild(answerOne);
 
-
 var answerOneGen = function(items) {
   var pNodes = items.forEach(function(item) {
     var answerOne = document.createElement("P");
@@ -58,7 +53,7 @@ var answerOneGen = function(items) {
     document.getElementById("answer1").appendChild(answerOne);
   });
   return pNodes;
-}
+};
 
 answerOneGen(averagePrice);
 
@@ -75,7 +70,7 @@ answerOneGen(averagePrice);
 var priceRange = function(items, min, max) {
   var inRange = items.filter(function(item) {
     if (item.price > min && item.price < max) {
-      return item
+      return item;
     }
   });
   return inRange;
@@ -87,19 +82,19 @@ var inPriceRange = priceRange(items, 14, 18);
 // -- Answer 2 Page Population
 // -------------------------
 
-  var answerTwoList = document.createElement("UL");
-  answerTwoList.setAttribute("id", "answerTwoList");
-  document.getElementById("answer2").appendChild(answerTwoList);
+var answerTwoList = document.createElement("UL");
+answerTwoList.setAttribute("id", "answerTwoList");
+document.getElementById("answer2").appendChild(answerTwoList);
 
-  var answerTwoGenerator = function(items) {
-    for (i in items) {
-      var answerTwo = document.createElement("LI");
-      var answerTwoText = document.createTextNode(items[i].title);
-      answerTwo.appendChild(answerTwoText);
-      document.getElementById("answerTwoList").appendChild(answerTwo);
-    }
-  };
-  answerTwoGenerator(inPriceRange);
+var answerTwoGenerator = function(items) {
+  for (i in items) {
+    var answerTwo = document.createElement("LI");
+    var answerTwoText = document.createTextNode(items[i].title);
+    answerTwo.appendChild(answerTwoText);
+    document.getElementById("answerTwoList").appendChild(answerTwo);
+  }
+};
+answerTwoGenerator(inPriceRange);
 
 // //////////////////////////////////////////
 // ------   Answer 3 ----------------------
@@ -125,16 +120,16 @@ var ofCurrencyType = currencyType(items, "GBP")
 // -- Answer 3 Page Population
 // -------------------------
  
- function answerThreeGenerator(items) {
-  for (i in items) {
-    var answerThree = document.createElement("P");
-    var answerThreeText = document.createTextNode(ofCurrencyType[i].title + " \xA3 " + ofCurrencyType[i].price);
-    answerThree.appendChild(answerThreeText);
-    document.getElementById("answer3").appendChild(answerThree);
-  }
- }
+function answerThreeGenerator(items) {
+for (i in items) {
+  var answerThree = document.createElement("P");
+  var answerThreeText = document.createTextNode(ofCurrencyType[i].title + " \xA3 " + ofCurrencyType[i].price);
+  answerThree.appendChild(answerThreeText);
+  document.getElementById("answer3").appendChild(answerThree);
+}
+};
 
- answerThreeGenerator(ofCurrencyType);
+answerThreeGenerator(ofCurrencyType);
 
 // //////////////////////////////////////////
 // ------   Answer 4 ----------------------
@@ -151,8 +146,8 @@ var materialType = function(items, material) {
       return item
     }
   });
-  return ofType
-}
+  return ofType;
+;}
 
 var madeOfWood = materialType(items, "wood");
 
@@ -166,13 +161,13 @@ var madeOfWood = materialType(items, "wood");
  
  var answerFourGenerator = function(items) {
    for (i in items) {
-   var answerFour = document.createElement("LI")
+   var answerFour = document.createElement("LI");
    var answerFourText = document.createTextNode(items[i].title);
    answerFour.appendChild(answerFourText);
    document.getElementById("answerFourList").appendChild(answerFour);
    }
- }
- answerFourGenerator(madeOfWood)
+ };
+ answerFourGenerator(madeOfWood);
 
 // //////////////////////////////////////////
 // ------   Answer 5 ----------------------
@@ -187,7 +182,7 @@ var madeOfWood = materialType(items, "wood");
 var materialCount = function(items, n) {
   var inRange = items.filter(function(item) {
     if ((item.materials).length >= n) {
-      return item
+      return item;
     }
   });
   return inRange;
@@ -199,28 +194,28 @@ var eightPlusMatierals = materialCount(items, 8);
 // -- Answer 5 Page Population
 // -------------------------
 
- var answerFiveGen = function(items) {
-   var masterUl = document.createElement("UL");
-   for (i in items) {
-     var masterLi = document.createElement("LI");
-     var masterLiText = document.createTextNode(items[i].title)
-     masterLi.appendChild(masterLiText);
-     var subUl = document.createElement("UL");
-     for (a in items[i].materials) {
-       var subLi = document.createElement("LI");
-       var subLiText = document.createTextNode(items[i].materials[a])
-       subLi.appendChild(subLiText);
-       subUl.appendChild(subLi);
-     }
-     masterLi.appendChild(subUl);
-     masterUl.appendChild(masterLi);
+var answerFiveGen = function(items) {
+ var masterUl = document.createElement("UL");
+ for (i in items) {
+   var masterLi = document.createElement("LI");
+   var masterLiText = document.createTextNode(items[i].title);
+   masterLi.appendChild(masterLiText);
+   var subUl = document.createElement("UL");
+   for (a in items[i].materials) {
+     var subLi = document.createElement("LI");
+     var subLiText = document.createTextNode(items[i].materials[a]);
+     subLi.appendChild(subLiText);
+     subUl.appendChild(subLi);
    }
-   answerFive = document.getElementById("answer5");
-   answerFive.appendChild(masterUl);
+   masterLi.appendChild(subUl);
+   masterUl.appendChild(masterLi);
  }
- 
- 
- answerFiveGen(eightPlusMatierals);
+ answerFive = document.getElementById("answer5");
+ answerFive.appendChild(masterUl);
+};
+
+
+answerFiveGen(eightPlusMatierals);
 
 // //////////////////////////////////////////
 // ------   Answer 6 ----------------------
@@ -235,7 +230,7 @@ var eightPlusMatierals = materialCount(items, 8);
 var madeBy = function(items, manufacturer) {
   var authentic = items.filter(function(item) {
     if (item.who_made == manufacturer) {
-      return item
+      return item;
     }
   });
   return authentic;
@@ -251,6 +246,26 @@ var answerSix = document.createElement("P");
 var asnwerSixText = document.createTextNode(String(sellerMade.length  + " were made by their sellers"));
 answerSix.appendChild(asnwerSixText);
 document.getElementById("answer6").appendChild(answerSix);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
