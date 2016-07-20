@@ -9,3 +9,5 @@
 * Use JavaScript to generate HTML content.
 * `.appendChild()`
 * `document.createElement("UL")`
+
+[javaScript README.md](https://github.com/jjrajani/Week2_Project/blob/master/js/README.md)
