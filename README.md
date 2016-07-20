@@ -1,6 +1,6 @@
 #### Week 2 - Project - Etsy Items Data Filtering
 ---
-##### Practice grabbing elements on page and javaScript HOF
+###### Practice grabbing elements on page and using javaScript HOF
 ---
 ###### [javaScript](https://github.com/jjrajani/Week2_Project/blob/master/js/README.md)
 
