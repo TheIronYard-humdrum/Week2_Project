@@ -1,4 +1,4 @@
-#### Week 2 - Project - Etsy Items
+#### Week 2 - Project - Etsy Items Data Filtering
 ---
 ##### Practice grabbing elements on page and javaScript HOF
 ---
