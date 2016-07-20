@@ -1,6 +1,8 @@
 #### Week 2 - Project - Etsy Items
+---
+##### Practice grabbing elements on page and javaScript HOF
+---
 
-###### Main README for Week 2 Project
 * Practice using Higher Order Functions.
 * Practice populating HTML with JavaScript.
 * Use functions to sift through data.

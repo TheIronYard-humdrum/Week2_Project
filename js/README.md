@@ -1,5 +1,9 @@
-#### Week 2 Project - JavaScript Functions - Putting Elements on Page
-##### JavaScript
+#### Week 2 Project - JavaScript
+---
+##### Practice grabbing elements on page and javaScript HOF
+---
+
+##### JavaScript Methods
 
 ###### JavaScript Functions for Week 2 Project
 * Practice using Higher Order Functions.
@@ -8,7 +12,7 @@
 * `document.createElement("UL")`
 * `.filter()`
 
-| Answer 1 | :smile:
+| **Answer** 1 | :smile:
 ____________
 | **Task** |
 | ------------ |
@@ -21,7 +25,7 @@ ____________
 
 ---
 
-| Answer 2 | :smiley:
+| **Answer 2** | :smiley:
 ____________
 | **Task** |
 | ------------ |
@@ -32,7 +36,7 @@ ____________
 | `priceRange(items, min, max)` | **array** of items, a **min** and **max** price | **array** of items within the price range. |
 ---
 
-| Answer 3 | :sunglasses:
+| **Answer 3** | :sunglasses:
 ____________
 | **Task** |
 | ------------ |
@@ -43,7 +47,7 @@ ____________
 | `currencyType(items, type)` | **array** of items, **currency type** |**array** of items sold in specified currency type |
 ---
 
-| Answer 4 | :smile:
+| **Answer 4** | :smile:
 ____________
 | **Task** |
 | ------------ |
@@ -54,7 +58,7 @@ ____________
 | `materialType(items, material)` | **array** of items | **array** of items made of specified material. |
 ---
 
-| Answer 5 | :smiley:
+| **Answer 5** | :smiley:
 ____________
 | **Task** |
 | ------------ |
@@ -65,7 +69,7 @@ ____________
 | `materialCount(items, n)` | **array** of items | **array** of items made with **n+** materials. |
 ---
 
-| Answer 6 | :sunglasses:
+| **Answer 6** | :sunglasses:
 ____________
 | **Task** |
 | ------------ |
